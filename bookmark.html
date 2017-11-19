@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Bastian Krata">
+    <title>Bookmark-JS</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="css/main.min.css" rel="stylesheet">
+  </head>
+<div class="text"></div>
+  <body onload="fetchBookmarks()">
+    <div class="container">
+      <div class="header clearfix">
+        <h1 class="text-muted">Bookmark</h1>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Bookmark Your Favorite Pages</h2>
+        <form id="myForm">
+          <div class="form-group">
+            <label>Site Name</label>
+            <input type="text" class="form-control" id="siteName" placeholder="Website Name">
+          </div>
+          <div class="form-group">
+            <label>Site URL</label>
+            <input type="text" class="form-control" id="siteUrl" placeholder="Website Url">
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-sm-12">
+          <div id="bookmarksResults"></div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy;2017</p>
+      </footer>
+
+    </div> <!-- /container -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/main.js"></script>
+  </body>
+</html>
